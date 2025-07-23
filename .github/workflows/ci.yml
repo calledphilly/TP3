@@ -19,7 +19,7 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - name: install dependencies
-        run: pnpm ci
+        run: pnpm i
   build:
     runs-on: ubuntu-latest
     steps:
@@ -35,6 +35,6 @@ jobs:
         with:
           node-version: 20
       - name: install dep
-        run: pnpm ci
+        run: pnpm i
       - name: build dep
         run: pnpm run build
