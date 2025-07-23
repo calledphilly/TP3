@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
       - name: install dependencies
-        run: pnpm ci
+        run: pnpm i
   build:
     runs-on: ubuntu-latest
     steps:
@@ -33,6 +33,6 @@ jobs:
         with:
           version: 10
       - name: install dep
-        run: pnpm ci
+        run: pnpm i
       - name: build dep
         run: pnpm run build
