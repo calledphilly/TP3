@@ -12,7 +12,7 @@ jobs:
       - name: set up node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20
       - name: install dependencies
         run: npm ci 
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: set up node
         uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 20
       - name: install
         run: npm ci
       - name: build
